@@ -1,0 +1,77 @@
+# Copyright 2021 - 2022 Preda Diana 314CA
+
+NUME: Preda Diana
+GROUP: 314CA
+
+HOMEWORK 1: Now You See Me
+
+WHAT WE DO:
+
+we use a doubly_linked_list in a doubly_linked_list to store decks of cards,
+each card is characterised by its number (1 - 14) and its value
+(HEART, CLUB, DIAMOND, SPADE)
+
+we implement a set of commands to play with:
+
+    ADD DECK - we add a new deck of cards
+
+    DEL DECK - we delete an indicated deck of cards
+
+    DEL CARD - we delete an indicated card from an indicated deck
+
+    ADD CARDS - we add a specified number of cards in an indicated deck
+
+    DECK NUMBER - we print the number of decks we currently have
+
+    DECK LEN - we print the number of cards an indicated deck has
+
+    SHUFFLE DECK - we change the first half with the second half of an
+    indicated deck, if we have an odd number of cards, the first
+    half contain n/2  cards and the second n/2 + 1 cards
+
+    MERGE DECKS - we combine 2 indicated decks in a new one, we delete the
+    old decks and add the new one at the end of the deck
+    of decks
+
+    SPLIT DECKS - we keep the first 'n' cards from an indicated deck and move
+    the rest to a new deck, created rigth next to the old one
+    we delete the moved cards from the first deck
+
+    REVERSE DECK - we reverse the cards of an indicated deck
+
+    SHOW DECK - we print the indicated deck
+
+    SHOW ALL - we print all the decks
+
+    SORT DECK - we sort the cards of an indicated deck by their values and if
+    two cards value coincide, we sort them by their symbol:
+    HEART is the strongest, followed by SPADE, DIAMOND and CLUB
+    
+    EXIT - we stop the game by releasing the memory
+
+SOME COMMENTS:
+
+for implementing this program, i used 3 structures, one for the
+doubly linked list, one for the node, and one for the cards characteristics
+
+for an easier use of doubly linked lists, there is the 'list' file which
+contains useful operations with doubly linked listS
+
+for treating allocation errors, i used DIE function, which could be find in the
+'utils' file
+
+for identifying invalid commands, i used the check function which scans the rest of
+the line for mistakes
+
+for every indicated index, a verified if the index is out of bounds for the 
+given deck, or for the deck of decks
+
+WHAT COULD BE BETTER:
+
+there are some duplicated code sequences, that could have been avoided
+
+WHAT I LEARNED:
+
+better use of C programming, doubly linked lists and generic data structures 
+
+I HOPE THIS SUMS IT ALL UP :)
